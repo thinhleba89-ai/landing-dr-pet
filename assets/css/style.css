@@ -307,6 +307,7 @@ button, input, select, textarea {
   color: var(--color-primary);
   line-height: 1.1;
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .brand-text span {
@@ -315,6 +316,7 @@ button, input, select, textarea {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .main-nav {
@@ -3133,23 +3135,26 @@ button, input, select, textarea {
     display: none;
   }
   .nav-wrapper {
-    height: 72px;
+    height: 68px;
   }
   .logo-group {
     gap: 10px;
+    flex-shrink: 0;
   }
   .logo-group img {
-    height: 44px;
+    height: 42px;
   }
   .brand-text h1 {
-    font-size: 1.18rem;
+    font-size: 1.15rem;
+    white-space: nowrap;
   }
   .brand-text span {
-    font-size: 0.68rem;
+    font-size: 0.65rem;
     letter-spacing: 0.04em;
+    white-space: nowrap;
   }
   .header-actions .btn {
-    display: none;
+    display: none !important;
   }
   .main-nav {
     display: none;

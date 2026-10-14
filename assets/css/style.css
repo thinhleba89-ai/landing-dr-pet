@@ -1240,6 +1240,321 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
+   Google Reviews & Real Customer Feedback Section (5.0 Stars)
+   ========================================================================== */
+.reviews-section {
+  padding: 95px 0;
+  background-color: var(--color-sand);
+  position: relative;
+  border-top: 1px solid var(--color-sand-dark);
+  border-bottom: 1px solid var(--color-sand-dark);
+}
+
+.google-summary-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(0, 41, 87, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 45px;
+}
+
+.google-summary-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.google-icon-box {
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  border: 1px solid #EAEAEA;
+}
+
+.google-score-meta h4 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-dark);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.google-stars {
+  color: #FBBC05;
+  font-size: 1.1rem;
+  display: inline-flex;
+  gap: 3px;
+}
+
+.google-score-meta p {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+}
+
+.google-summary-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-google-view {
+  background: #FFFFFF;
+  color: var(--color-dark);
+  border: 1.5px solid #D2D6DC;
+  padding: 12px 22px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.92rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  transition: var(--transition);
+}
+
+.btn-google-view:hover {
+  background: var(--color-primary-soft);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.btn-google-review {
+  background: linear-gradient(135deg, #FF6B35 0%, #E05420 100%);
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 24px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.92rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  box-shadow: 0 6px 18px rgba(255, 107, 53, 0.28);
+  transition: var(--transition);
+}
+
+.btn-google-review:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(255, 107, 53, 0.38);
+  color: #FFFFFF;
+}
+
+/* Reviews Grid */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.review-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-sand-dark);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(0, 41, 87, 0.2);
+}
+
+.review-photo-wrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background-color: #EDF3FA;
+}
+
+.review-photo-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.review-card:hover .review-photo-wrapper img {
+  transform: scale(1.05);
+}
+
+.review-photo-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(0, 26, 56, 0.85);
+  backdrop-filter: blur(6px);
+  color: #FFFFFF;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.review-card-body {
+  padding: 24px 26px 26px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.review-author-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.review-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.05rem;
+  flex-shrink: 0;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 41, 87, 0.1);
+}
+
+.review-author-meta {
+  flex-grow: 1;
+}
+
+.review-author-name {
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: var(--color-dark);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.review-verified-icon {
+  color: #1A73E8;
+  font-size: 0.9rem;
+}
+
+.review-date-text {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+.review-stars-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.review-service-badge {
+  background: var(--color-sand);
+  color: var(--color-primary);
+  border: 1px solid var(--color-sand-deep);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.review-quote-content {
+  font-size: 0.94rem;
+  color: var(--color-text-body);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex-grow: 1;
+  position: relative;
+}
+
+.review-quote-content::before {
+  content: '“';
+  font-size: 2rem;
+  color: rgba(0, 41, 87, 0.15);
+  position: absolute;
+  top: -14px;
+  left: -10px;
+  font-family: serif;
+}
+
+.review-google-stamp {
+  padding-top: 14px;
+  border-top: 1px dashed #EAEAEA;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+.review-google-stamp a {
+  color: var(--color-primary);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.review-google-stamp a:hover {
+  text-decoration: underline;
+  color: var(--color-secondary);
+}
+
+/* Review Bottom Callout */
+.reviews-bottom-callout {
+  margin-top: 45px;
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 26px 36px;
+  border: 1px dashed #CBD5E1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.reviews-bottom-callout p {
+  font-size: 0.98rem;
+  color: var(--color-dark);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviews-bottom-callout p i {
+  color: var(--color-secondary);
+  font-size: 1.25rem;
+}
+
+/* ==========================================================================
    Booking & Consultation Form Section (Deep Doctor Pet Navy #002957)
    ========================================================================== */
 .booking-section {

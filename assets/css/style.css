@@ -62,6 +62,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -72,6 +73,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  width: 100%;
 }
 
 img {
@@ -3130,10 +3132,29 @@ button, input, select, textarea {
   .top-bar {
     display: none;
   }
+  .nav-wrapper {
+    height: 72px;
+  }
+  .logo-group {
+    gap: 10px;
+  }
+  .logo-group img {
+    height: 44px;
+  }
+  .brand-text h1 {
+    font-size: 1.2rem;
+  }
+  .brand-text span {
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+  }
+  .header-actions .btn {
+    display: none;
+  }
   .main-nav {
     display: none;
     position: absolute;
-    top: 84px;
+    top: 72px;
     left: 0;
     right: 0;
     background: #FFFFFF;
@@ -3147,9 +3168,14 @@ button, input, select, textarea {
   }
   .mobile-toggle {
     display: block;
+    margin-left: auto;
+  }
+  .hero {
+    padding: 48px 0 65px 0;
   }
   .hero-title {
-    font-size: 2.3rem;
+    font-size: clamp(1.75rem, 5.5vw, 2.2rem);
+    line-height: 1.25;
   }
   .counter-grid {
     grid-template-columns: 1fr;

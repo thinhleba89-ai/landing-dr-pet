@@ -835,18 +835,20 @@ button, input, select, textarea {
 .tabbed-services-layout {
   display: grid;
   grid-template-columns: 320px 1fr;
-  gap: 40px;
-  align-items: start;
+  gap: 36px;
+  align-items: stretch;
 }
 
 .service-tabs-nav {
   background: var(--color-sand);
   border-radius: var(--radius-lg);
-  padding: 18px;
+  padding: 18px 16px;
   border: 1.5px solid var(--color-sand-deep);
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  justify-content: space-between;
+  gap: 10px;
+  height: 100%;
 }
 
 .service-tab-btn {
@@ -864,6 +866,7 @@ button, input, select, textarea {
   cursor: pointer;
   transition: var(--transition);
   width: 100%;
+  flex: 1;
 }
 
 .service-tab-btn i {
@@ -872,6 +875,7 @@ button, input, select, textarea {
   width: 24px;
   text-align: center;
   transition: var(--transition);
+  flex-shrink: 0;
 }
 
 .service-tab-btn:hover {
@@ -890,6 +894,11 @@ button, input, select, textarea {
 }
 
 /* Service Tab Panels */
+.service-tab-panels {
+  height: 100%;
+  display: flex;
+}
+
 .service-tab-panel {
   display: none;
   background: var(--color-sand-light);
@@ -898,10 +907,14 @@ button, input, select, textarea {
   padding: 38px;
   box-shadow: var(--shadow-sm);
   animation: fadeInTab 0.35s ease;
+  width: 100%;
+  height: 100%;
 }
 
 .service-tab-panel.active {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @keyframes fadeInTab {

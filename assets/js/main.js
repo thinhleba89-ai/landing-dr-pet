@@ -8,30 +8,36 @@ const voucherData = {
   rabies: {
     tag: 'Chương Trình Dài Hạn — Áp Dụng Xuyên Suốt',
     tagClass: 'tag-primary',
-    image: 'assets/images/tiem-dai-free.png',
+    image: 'assets/images/tiem-dai-voucher-16x9.png',
+    valueLabel: 'ĐẶC QUYỀN MIỄN PHÍ',
+    valueAmount: '0Đ',
+    validity: 'Áp dụng xuyên suốt tất cả các ngày trong tuần',
     title: 'TIÊM NGỪA DẠI & SỔ GIUN MIỄN PHÍ CHO CHÓ MÈO',
-    quote: '“Doctor Pet chọn làm điều này lâu dài vì phòng bệnh luôn tốt hơn chờ có vấn đề mới điều trị. Yêu thương là chủ động bảo vệ bé cưng trước những nguy cơ hoàn toàn có thể phòng ngừa.”',
+    quote: 'Doctor Pet chọn làm điều này lâu dài vì phòng bệnh luôn tốt hơn chờ có vấn đề mới điều trị. Yêu thương là chủ động bảo vệ bé cưng trước những nguy cơ hoàn toàn có thể phòng ngừa.',
     perks: [
-      '<strong>01 Mũi Tiêm Vaccine Phòng Dại Chính Hãng:</strong> Miễn phí 100% (0Đ).',
-      '<strong>01 Liều Thuốc Sổ Giun Định Kỳ:</strong> Miễn phí 100% (0Đ).',
-      '<strong>Khám Sàng Lọc Sức Khỏe Ban Đầu:</strong> Bác sĩ thú y kiểm tra thể trạng, cân nặng, thân nhiệt trước khi tiêm.'
+      '<strong>01 Mũi Tiêm Vaccine Phòng Dại Chính Hãng:</strong> Miễn phí 100% (0Đ), vắc-xin nhập khẩu chính hãng bảo quản dây chuyền lạnh chuẩn GSP.',
+      '<strong>01 Liều Thuốc Sổ Giun Định Kỳ:</strong> Miễn phí 100% (0Đ), loại bỏ nội ký sinh trùng định kỳ an toàn cho đường ruột.',
+      '<strong>Khám Sàng Lọc Thể Trạng Ban Đầu:</strong> Bác sĩ thú y trực tiếp kiểm tra thể trạng, đo cân nặng và thân nhiệt kỹ lưỡng trước khi tiêm.'
     ],
-    note: 'Chương trình áp dụng XUYÊN SUỐT tất cả các ngày trong tuần tại 114 Lê Văn Lương, Q.7. Không giới hạn thời gian, không cần chờ đợt khuyến mãi!',
-    actionText: 'Đặt Lịch Nhận Ưu Đãi Tiêm Phòng Ngay',
+    note: 'Chương trình áp dụng XUYÊN SUỐT tất cả các ngày trong tuần tại 114 Lê Văn Lương, Quận 7. Không giới hạn thời gian, không cần chờ đợt khuyến mãi!',
+    actionText: 'Đặt Lịch Nhận Ưu Đãi 0Đ Ngay',
     serviceTarget: 'Tiêm phòng vaccine / Ngừa dại'
   },
   birthday: {
     tag: 'Mừng Sinh Nhật Doctor Pet — Kéo Dài Đến Hết Năm 2026',
     tagClass: 'tag-secondary',
-    image: 'assets/images/uudai-sinhnhat.png',
-    title: 'MỪNG SINH NHẬT DOCTOR PET – TRI ÂN KHÁCH HÀNG THÂN YÊU',
-    quote: '“Thêm một tuổi mới là thêm một cột mốc đáng nhớ. Doctor Pet tri ân sâu sắc tình cảm của ba mẹ thú cưng với 2 gói chăm sóc đặc quyền kéo dài xuyên suốt đến hết năm 2026!”',
+    image: 'assets/images/uudai-sinhnhat-voucher-16x9.png',
+    valueLabel: 'TIẾT KIỆM ĐẾN',
+    valueAmount: '700.000Đ',
+    validity: 'Kéo dài xuyên suốt đến hết ngày 31/12/2026',
+    title: 'MỪNG SINH NHẬT DOCTOR PET – TRI ÂN KHÁCH HÀNG',
+    quote: 'Thêm một tuổi mới là thêm một cột mốc đáng nhớ. Doctor Pet tri ân sâu sắc tình cảm của ba mẹ thú cưng với 2 gói chăm sóc đặc quyền kéo dài xuyên suốt đến hết năm 2026!',
     perks: [
-      '<strong>ƯU ĐÃI 1 – Khám Sức Khỏe Toàn Diện Chỉ 900.000đ (Giá gốc 1.300.000đ):</strong> Khám lâm sàng + Xét nghiệm sinh lý & sinh hóa máu + Siêu âm màu tổng quát + Chụp X-quang kỹ thuật số + 🎁 Tặng voucher sổ giun 2 lần tiếp theo miễn phí.',
-      '<strong>ƯU ĐÃI 2 – Triệt Sản Thú Cưng (Chó & Mèo):</strong> 🎁 TẶNG NGAY dịch vụ cạo vôi răng cao cấp trị giá 700.000đ. Kỹ thuật vi phẫu đường mổ siêu nhỏ, chỉ tự tiêu, gây mê bay hơi Isoflurane hồi tỉnh an toàn sau 4 tiếng.'
+      '<strong>Gói 1 – Khám Sức Khỏe Toàn Diện 4 trong 1:</strong> Chỉ 900.000đ (Giá gốc 1.300.000đ) bao gồm Khám lâm sàng + Xét nghiệm sinh lý & sinh hóa máu + Siêu âm màu tổng quát + Chụp X-quang kỹ thuật số + Tặng voucher sổ giun 2 lần tiếp theo miễn phí.',
+      '<strong>Gói 2 – Triệt Sản Thú Cưng (Chó & Mèo):</strong> TẶNG NGAY dịch vụ cạo vôi răng cao cấp trị giá 700.000đ. Kỹ thuật vi phẫu đường mổ siêu nhỏ 1-2cm, chỉ tự tiêu thẩm mỹ, quy trình gây mê an toàn và hồi tỉnh nhanh.'
     ],
-    note: 'Chương trình áp dụng cho cả Chó và Mèo, kéo dài đến hết ngày 31/12/2026 tại 114 Lê Văn Lương, Phường Tân Hưng, Quận 7.',
-    actionText: 'Đặt Lịch Nhận Gói Ưu Đãi Này Ngay',
+    note: 'Chương trình áp dụng cho cả Chó và Mèo, kéo dài đến hết ngày 31/12/2026 tại phòng khám 114 Lê Văn Lương, Phường Tân Hưng, Quận 7.',
+    actionText: 'Đặt Lịch Nhận Gói Tri Ân Ngay',
     serviceTarget: 'Triệt sản an toàn'
   }
 };
@@ -44,34 +50,78 @@ window.openVoucherModal = function(type) {
 
   if (!modal || !container || !data) return;
 
-  const perksHtml = data.perks.map(p => `<li><i class="fa-solid fa-circle-check"></i> <div>${p}</div></li>`).join('');
+  const perksHtml = data.perks.map(p => `
+    <div class="voucher-perk-card">
+      <div class="voucher-perk-icon"><i class="fa-solid fa-check"></i></div>
+      <div class="voucher-perk-text">${p}</div>
+    </div>
+  `).join('');
 
   container.innerHTML = `
-    <img src="${data.image}" alt="${data.title}" class="voucher-modal-banner">
-    <div class="voucher-modal-inner">
-      <span class="voucher-modal-tag ${data.tagClass}">${data.tag}</span>
-      <h3 class="voucher-modal-title">${data.title}</h3>
-      <div class="voucher-modal-quote">${data.quote}</div>
-      
-      <h4 class="voucher-modal-section-title"><i class="fa-solid fa-gift" style="color: var(--color-secondary);"></i> Quyền Lợi Đặc Quyền Dành Cho Bạn:</h4>
-      <ul class="voucher-modal-list">
-        ${perksHtml}
-      </ul>
-
-      <div class="voucher-modal-note-box">
-        <i class="fa-solid fa-circle-info"></i>
-        <div><strong>Lưu ý:</strong> ${data.note}</div>
+    <div class="voucher-modal-layout">
+      <!-- Cột Trái: Ảnh Banner & Thông Tin Tóm Tắt -->
+      <div class="voucher-modal-media-col">
+        <div class="voucher-modal-banner-wrap">
+          <img src="${data.image}" alt="${data.title}" class="voucher-modal-banner">
+        </div>
+        <div class="voucher-modal-sidebar-card">
+          <div class="voucher-modal-value-pill">
+            <span class="value-label">${data.valueLabel}</span>
+            <span class="value-amount">${data.valueAmount}</span>
+          </div>
+          <div class="voucher-modal-side-meta">
+            <div class="side-meta-item">
+              <i class="fa-regular fa-calendar-check"></i>
+              <span>${data.validity}</span>
+            </div>
+            <div class="side-meta-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>114 Lê Văn Lương, Q.7, TP.HCM</span>
+            </div>
+            <div class="side-meta-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>Hotline 24/7: <strong>0981 489 114</strong></span>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="voucher-modal-actions">
-        <button class="btn btn-secondary btn-lg" onclick="claimVoucher('${data.serviceTarget}')">
-          <i class="fa-regular fa-calendar-check"></i>
-          <span>${data.actionText}</span>
-        </button>
-        <a href="tel:0981489114" class="btn btn-outline btn-lg" style="flex: 0 0 auto;">
-          <i class="fa-solid fa-phone"></i>
-          <span>Hotline: 0981 489 114</span>
-        </a>
+      <!-- Cột Phải: Nội Dung Chi Tiết Căn Chỉnh Khoa Học -->
+      <div class="voucher-modal-content-col">
+        <div class="voucher-modal-header">
+          <span class="voucher-modal-tag ${data.tagClass}">${data.tag}</span>
+          <h3 class="voucher-modal-title">${data.title}</h3>
+        </div>
+
+        <div class="voucher-modal-quote">
+          <i class="fa-solid fa-quote-left quote-icon"></i>
+          <p>${data.quote}</p>
+        </div>
+        
+        <div class="voucher-modal-perks-section">
+          <h4 class="voucher-modal-section-title">
+            <i class="fa-solid fa-gift"></i> Quyền Lợi Đặc Quyền Dành Cho Bé:
+          </h4>
+          <div class="voucher-perks-grid">
+            ${perksHtml}
+          </div>
+        </div>
+
+        <div class="voucher-modal-note-box">
+          <i class="fa-solid fa-circle-info"></i>
+          <div><strong>Lưu ý:</strong> ${data.note}</div>
+        </div>
+
+        <div class="voucher-modal-actions">
+          <button class="btn btn-primary btn-lg" onclick="claimVoucher('${data.serviceTarget}')">
+            <i class="fa-regular fa-calendar-check"></i>
+            <span>${data.actionText}</span>
+          </button>
+          <a href="tel:0981489114" class="btn btn-outline btn-lg">
+            <i class="fa-solid fa-phone"></i>
+            <span>Gọi Hotline</span>
+          </a>
+        </div>
       </div>
     </div>
   `;

@@ -134,6 +134,34 @@
     </div>
   </section>
 
+  <!-- ADI-Style Dark Navy Counter Strip (Chỉ Số Uy Tín & Chuẩn Quốc Tế) -->
+  <section class="counter-section">
+    <div class="container">
+      <div class="counter-grid">
+        <div class="counter-item">
+          <div class="counter-number">15.000+</div>
+          <div class="counter-label">Bệnh Nhân 4 Chân</div>
+          <div class="counter-sub">Được khám & điều trị an toàn tại Doctor Pet</div>
+        </div>
+        <div class="counter-item">
+          <div class="counter-number">100%</div>
+          <div class="counter-label">Bác Sĩ Chính Quy</div>
+          <div class="counter-sub">Tốt nghiệp ĐH Nông Lâm & tu nghiệp chuyên sâu</div>
+        </div>
+        <div class="counter-item">
+          <div class="counter-number">04</div>
+          <div class="counter-label">Phòng Y Khoa Chuyên Biệt</div>
+          <div class="counter-sub">Khám, Siêu âm màu, Xét nghiệm, Phòng mổ áp lực dương</div>
+        </div>
+        <div class="counter-item">
+          <div class="counter-number">24/7</div>
+          <div class="counter-label">Trực Cấp Cứu & Nội Trú</div>
+          <div class="counter-sub">Bác sĩ & điều dưỡng túc trực liên tục ngày đêm</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Promotions Highlight: Interactive Voucher Cards with Sawtooth Perforation -->
   <section class="promo-section" id="promotions">
     <div class="container">
@@ -233,104 +261,183 @@
     </div>
   </section>
 
-  <!-- Core Services -->
-  <section class="services-section" id="services">
+  <!-- ADI-Style Interactive Tabbed Services (Chuyên Khoa Thú Y Chuẩn Quốc Tế) -->
+  <section class="tabbed-services-section" id="services">
     <div class="container">
       <div class="section-header">
-        <div class="badge badge-primary">Dịch Vụ Trọng Tâm</div>
-        <h2 class="section-title">Giải Pháp Y Khoa Chuyên Nghiệp Cho Thú Cưng</h2>
-        <p class="section-subtitle">Tất cả các ca khám và điều trị tại Doctor Pet đều được chuẩn hóa theo quy trình y khoa quốc tế với sự đồng hành của bác sĩ chuyên môn cao.</p>
+        <div class="badge badge-gold"><i class="fa-solid fa-stethoscope"></i> Tiêu Chuẩn Y Khoa Quốc Tế</div>
+        <h2 class="section-title">Các Chuyên Khoa Điều Trị Tại Doctor Pet</h2>
+        <p class="section-subtitle">Hệ thống phòng khám chuyên sâu, trang thiết bị tiên tiến cùng phác đồ điều trị dựa trên y học chứng cứ (Evidence-based veterinary medicine).</p>
       </div>
 
-      <div class="services-grid">
-        <!-- Service 1 -->
-        <div class="service-card">
-          <div class="service-icon-box">
+      <div class="tabbed-services-layout">
+        <!-- Sidebar Tabs Navigation -->
+        <div class="service-tabs-nav" role="tablist">
+          <button class="service-tab-btn active" data-tab="tab-clinical">
             <i class="fa-solid fa-stethoscope"></i>
-          </div>
-          <h3 class="service-title">Khám & Tầm Soát Nội Khoa</h3>
-          <p class="service-desc">Khám lâm sàng chi tiết tai-mũi-họng, tim mạch, tiêu hóa. Tầm soát định kỳ giúp phát hiện sớm mầm bệnh tiềm ẩn ở chó mèo lớn tuổi.</p>
-          <ul class="service-features">
-            <li><i class="fa-solid fa-circle-check"></i> Siêu âm màu ổ bụng & tim mạch</li>
-            <li><i class="fa-solid fa-circle-check"></i> Xét nghiệm sinh lý & sinh hóa máu</li>
-            <li><i class="fa-solid fa-circle-check"></i> Đo huyết áp và test bệnh truyền nhiễm</li>
-          </ul>
-          <a href="#booking" class="service-action">Đặt lịch khám <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-
-        <!-- Service 2 -->
-        <div class="service-card">
-          <div class="service-icon-box">
+            <span>Nội Khoa & Tầm Soát</span>
+          </button>
+          <button class="service-tab-btn" data-tab="tab-surgery">
             <i class="fa-solid fa-bone"></i>
-          </div>
-          <h3 class="service-title">Phẫu Thuật & Mổ Xương</h3>
-          <p class="service-desc">Chuyên khoa phẫu thuật chỉnh hình chấn thương, kết hợp xương bằng nẹp vít sinh học, phục hồi chức năng vận động cho thú cưng bị tai nạn.</p>
-          <ul class="service-features">
-            <li><i class="fa-solid fa-circle-check"></i> Phòng mổ vô trùng tiêu chuẩn cao</li>
-            <li><i class="fa-solid fa-circle-check"></i> Chụp X-quang kỹ thuật số sắc nét</li>
-            <li><i class="fa-solid fa-circle-check"></i> Hồi sức sau mổ có theo dõi monitor</li>
-          </ul>
-          <a href="#booking" class="service-action">Tư vấn ca mổ <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="service-card">
-          <div class="service-icon-box">
+            <span>Phẫu Thuật & Chỉnh Hình</span>
+          </button>
+          <button class="service-tab-btn" data-tab="tab-neuter">
             <i class="fa-solid fa-hand-holding-medical"></i>
-          </div>
-          <h3 class="service-title">Triệt Sản Vi Phẫu An Toàn</h3>
-          <p class="service-desc">Triệt sản cho chó đực, chó cái, mèo đực và mèo cái với kỹ thuật mổ ít xâm lấn, chỉ khâu thẩm mỹ tự tiêu, bé không cần đeo loa chống liếm.</p>
-          <ul class="service-features">
-            <li><i class="fa-solid fa-circle-check"></i> Gây mê bay hơi Isoflurane an toàn</li>
-            <li><i class="fa-solid fa-circle-check"></i> Vết mổ siêu nhỏ 1-2cm, lành trong 3 ngày</li>
-            <li><i class="fa-solid fa-circle-check"></i> Tặng kèm chăm sóc hậu phẫu chu đáo</li>
-          </ul>
-          <a href="#booking" class="service-action">Xem gói triệt sản <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-
-        <!-- Service 4 -->
-        <div class="service-card">
-          <div class="service-icon-box">
+            <span>Triệt Sản Vi Phẫu</span>
+          </button>
+          <button class="service-tab-btn" data-tab="tab-derm">
             <i class="fa-solid fa-virus-covid"></i>
-          </div>
-          <h3 class="service-title">Điều Trị Da Liễu & Bệnh Nhiễm</h3>
-          <p class="service-desc">Phác đồ đặc trị viêm da mủ, viêm da dị ứng, ghẻ Demodex (xà mâu), nấm ngứa dai dẳng và các bệnh truyền nhiễm cấp tính Parvo, Care, Giảm Bạch Cầu.</p>
-          <ul class="service-features">
-            <li><i class="fa-solid fa-circle-check"></i> Soi tươi vi nấm & tế bào học da</li>
-            <li><i class="fa-solid fa-circle-check"></i> Liệu pháp tắm thuốc trị liệu thảo dược</li>
-            <li><i class="fa-solid fa-circle-check"></i> Kháng sinh đồ chuẩn xác, hạn chế tái phát</li>
-          </ul>
-          <a href="#booking" class="service-action">Tư vấn điều trị <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-
-        <!-- Service 5 -->
-        <div class="service-card">
-          <div class="service-icon-box">
+            <span>Da Liễu & Bệnh Nhiễm</span>
+          </button>
+          <button class="service-tab-btn" data-tab="tab-vaccine">
             <i class="fa-solid fa-syringe"></i>
-          </div>
-          <h3 class="service-title">Tiêm Chủng Vaccine & Phòng Dịch</h3>
-          <p class="service-desc">Vaccine 4 bệnh cho mèo, 5-7 bệnh cho chó chính hãng từ Pháp (Merial/Boehringer) và Mỹ (Zoetis). Bảo quản dây chuyền lạnh chuẩn GSP.</p>
-          <ul class="service-features">
-            <li><i class="fa-solid fa-circle-check"></i> Khám sàng lọc sức khỏe miễn phí trước tiêm</li>
-            <li><i class="fa-solid fa-circle-check"></i> Sổ theo dõi lịch tiêm điện tử tiện lợi</li>
-            <li><i class="fa-solid fa-circle-check"></i> Tặng tiêm ngừa dại và xổ giun định kỳ</li>
-          </ul>
-          <a href="#booking" class="service-action">Lên lịch tiêm chủng <i class="fa-solid fa-arrow-right"></i></a>
+            <span>Tiêm Chủng Vaccine</span>
+          </button>
+          <button class="service-tab-btn" data-tab="tab-icu">
+            <i class="fa-solid fa-hospital"></i>
+            <span>Cấp Cứu & Nội Trú 24/7</span>
+          </button>
         </div>
 
-        <!-- Service 6 -->
-        <div class="service-card">
-          <div class="service-icon-box">
-            <i class="fa-solid fa-hospital"></i>
+        <!-- Tab Panels Container -->
+        <div class="service-tab-panels">
+          <!-- Panel 1 -->
+          <div class="service-tab-panel active" id="tab-clinical">
+            <div class="tab-panel-grid">
+              <div class="tab-panel-info">
+                <h3>Chẩn Đoán Lâm Sàng & Tầm Soát Nội Khoa</h3>
+                <p class="tab-panel-desc">Kiểm tra sức khỏe toàn diện từ hệ tim mạch, hô hấp, tiêu hóa đến tiết niệu. Giúp phát hiện sớm các mầm bệnh nguy hiểm trước khi chuyển biến nặng.</p>
+                <ul class="tab-panel-features">
+                  <li><i class="fa-solid fa-circle-check"></i> Siêu âm Doppler màu ổ bụng và kiểm tra chức năng tim mạch</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Máy xét nghiệm sinh hóa tự động, trả kết quả chỉ trong 15 phút</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Đo huyết áp điện tử và test nhanh bệnh truyền nhiễm chuyên sâu</li>
+                </ul>
+                <a href="#booking" class="btn btn-primary" onclick="claimVoucher('Khám & Tầm soát tổng quát')">
+                  <i class="fa-regular fa-calendar-check"></i>
+                  <span>Đặt Lịch Khám Nội Khoa</span>
+                </a>
+              </div>
+              <div class="tab-panel-visual">
+                <img src="assets/images/banner-uudai.jpg" alt="Khám nội khoa Doctor Pet">
+                <span class="tab-panel-badge"><i class="fa-solid fa-shield-check"></i> Kết quả chuẩn xác 99.8%</span>
+              </div>
+            </div>
           </div>
-          <h3 class="service-title">Cấp Cứu & Nội Trú 24/7</h3>
-          <p class="service-desc">Phòng bệnh nội trú thoáng mát, hệ thống khử trùng tia cực tím UV và máy tạo oxy hỗ trợ hô hấp. Bác sĩ và điều dưỡng túc trực 24/7 liên tục.</p>
-          <ul class="service-features">
-            <li><i class="fa-solid fa-circle-check"></i> Khu cách ly riêng biệt cho chó và mèo</li>
-            <li><i class="fa-solid fa-circle-check"></i> Báo cáo tình trạng bằng video mỗi ngày</li>
-            <li><i class="fa-solid fa-circle-check"></i> Chế độ dinh dưỡng hồi sức chuyên sâu</li>
-          </ul>
-          <a href="#booking" class="service-action">Đăng ký nội trú <i class="fa-solid fa-arrow-right"></i></a>
+
+          <!-- Panel 2 -->
+          <div class="service-tab-panel" id="tab-surgery">
+            <div class="tab-panel-grid">
+              <div class="tab-panel-info">
+                <h3>Phẫu Thuật Ngoại Khoa & Kết Hợp Xương</h3>
+                <p class="tab-panel-desc">Phòng mổ vô trùng áp lực dương đạt chuẩn y khoa với hệ thống monitor theo dõi sinh hiệu liên tục. Chuyên sâu mổ gãy xương, kết hợp nẹp vít sinh học.</p>
+                <ul class="tab-panel-features">
+                  <li><i class="fa-solid fa-circle-check"></i> Phẫu thuật chỉnh hình chấn thương nẹp vít sinh học Titanium</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Chụp X-quang kỹ thuật số sắc nét xác định chính xác tổn thương</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Quy trình giảm đau đa mô thức giúp bé phục hồi nhanh, ít đau đớn</li>
+                </ul>
+                <a href="#booking" class="btn btn-primary" onclick="claimVoucher('Phẫu thuật / Mổ xương')">
+                  <i class="fa-regular fa-calendar-check"></i>
+                  <span>Tư Vấn Ca Phẫu Thuật</span>
+                </a>
+              </div>
+              <div class="tab-panel-visual">
+                <img src="assets/images/avatar-bs.png" alt="Phẫu thuật mổ xương thú y">
+                <span class="tab-panel-badge"><i class="fa-solid fa-award"></i> Phòng mổ vô trùng 100%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 3 -->
+          <div class="service-tab-panel" id="tab-neuter">
+            <div class="tab-panel-grid">
+              <div class="tab-panel-info">
+                <h3>Triệt Sản Vi Phẫu Thẩm Mỹ An Toàn</h3>
+                <p class="tab-panel-desc">Công nghệ triệt sản vi phẫu ít xâm lấn hàng đầu dành cho chó và mèo. Vết mổ siêu nhỏ chỉ 1-2cm, khâu thẩm mỹ chỉ tự tiêu không cần cắt chỉ hay đeo loa.</p>
+                <ul class="tab-panel-features">
+                  <li><i class="fa-solid fa-circle-check"></i> Gây mê bay hơi Isoflurane tiêu chuẩn quốc tế an toàn cho tim phổi</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Đường mổ tinh tế, mau lành trong 3-5 ngày, hạn chế tối đa sẹo</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Tặng kèm dịch vụ cạo vôi răng cao cấp trị giá 700.000đ</li>
+                </ul>
+                <a href="#booking" class="btn btn-primary" onclick="claimVoucher('Triệt sản an toàn')">
+                  <i class="fa-regular fa-calendar-check"></i>
+                  <span>Đăng Ký Gói Triệt Sản</span>
+                </a>
+              </div>
+              <div class="tab-panel-visual">
+                <img src="assets/images/uudai-sinhnhat.png" alt="Triệt sản vi phẫu an toàn">
+                <span class="tab-panel-badge"><i class="fa-solid fa-heart-pulse"></i> Tỉnh táo sau 4-6 giờ</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 4 -->
+          <div class="service-tab-panel" id="tab-derm">
+            <div class="tab-panel-grid">
+              <div class="tab-panel-info">
+                <h3>Da Liễu, Nhiễm Trùng & Vi Ký Sinh Trùng</h3>
+                <p class="tab-panel-desc">Phác đồ đặc trị dứt điểm các bệnh da liễu dai dẳng như xà mâu Demodex, viêm da dị ứng, nấm da Microsporum và các bệnh truyền nhiễm cấp tính.</p>
+                <ul class="tab-panel-features">
+                  <li><i class="fa-solid fa-circle-check"></i> Soi tươi vi nấm, cạo tế bào học da chẩn đoán đúng nguyên nhân</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Liệu pháp tắm thuốc thảo dược phục hồi lớp màng bảo vệ biểu bì</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Phác đồ điều trị kháng sinh đồ chính xác hạn chế nguy cơ tái phát</li>
+                </ul>
+                <a href="#booking" class="btn btn-primary" onclick="claimVoucher('Da liễu / Viêm da')">
+                  <i class="fa-regular fa-calendar-check"></i>
+                  <span>Tư Vấn Điều Trị Da Liễu</span>
+                </a>
+              </div>
+              <div class="tab-panel-visual">
+                <img src="assets/images/so-giun-free.png" alt="Điều trị da liễu thú cưng">
+                <span class="tab-panel-badge"><i class="fa-solid fa-circle-check"></i> Dứt điểm ngứa da & rụng lông</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 5 -->
+          <div class="service-tab-panel" id="tab-vaccine">
+            <div class="tab-panel-grid">
+              <div class="tab-panel-info">
+                <h3>Tiêm Chủng Vaccine Chuẩn GSP & Phòng Dịch</h3>
+                <p class="tab-panel-desc">Bảo vệ thú cưng trước các bệnh dịch nguy hiểm chết người. Sử dụng 100% vaccine nhập khẩu chính hãng từ Pháp (Boehringer Ingelheim) và Mỹ (Zoetis).</p>
+                <ul class="tab-panel-features">
+                  <li><i class="fa-solid fa-circle-check"></i> Hệ thống lưu trữ dây chuyền lạnh chuẩn GSP từ 2°C – 8°C</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Miễn phí 100% mũi tiêm phòng dại và thuốc sổ giun định kỳ</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Quản lý lịch tiêm thông minh qua sổ điện tử tự động nhắc lịch</li>
+                </ul>
+                <a href="#booking" class="btn btn-primary" onclick="claimVoucher('Tiêm phòng vaccine / Ngừa dại')">
+                  <i class="fa-regular fa-calendar-check"></i>
+                  <span>Đặt Lịch Tiêm Phòng</span>
+                </a>
+              </div>
+              <div class="tab-panel-visual">
+                <img src="assets/images/tiem-dai-free.png" alt="Tiêm phòng vaccine chính hãng">
+                <span class="tab-panel-badge"><i class="fa-solid fa-shield-virus"></i> Vaccine chính hãng 100%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 6 -->
+          <div class="service-tab-panel" id="tab-icu">
+            <div class="tab-panel-grid">
+              <div class="tab-panel-info">
+                <h3>Cấp Cứu 24/7 & Phòng Nội Trú Cách Ly</h3>
+                <p class="tab-panel-desc">Đội ngũ y bác sĩ trực cấp cứu 24/7 sẵn sàng can thiệp kịp thời các ca ngộ độc, khó thở, tai nạn giao thông, đẻ khó và lưu viện nội trú chăm sóc đặc biệt.</p>
+                <ul class="tab-panel-features">
+                  <li><i class="fa-solid fa-circle-check"></i> Buồng oxy áp lực, máy hút đờm nhớt và lồng ấp chuyên dụng</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Khu lưu viện cách ly riêng biệt cho chó và mèo có camera theo dõi</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Bác sĩ cập nhật video và báo cáo chỉ số sinh hiệu cho chủ nuôi mỗi ngày</li>
+                </ul>
+                <a href="#booking" class="btn btn-secondary" onclick="claimVoucher('Cấp cứu khẩn cấp')">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <span>Hotline Cấp Cứu: 0981 489 114</span>
+                </a>
+              </div>
+              <div class="tab-panel-visual">
+                <img src="assets/images/banner-uudai.jpg" alt="Cấp cứu thú y 24/7">
+                <span class="tab-panel-badge" style="background: rgba(220, 38, 38, 0.95);"><i class="fa-solid fa-clock"></i> Túc trực 24/7 xuyên suốt</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

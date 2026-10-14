@@ -256,7 +256,29 @@ document.addEventListener('DOMContentLoaded', () => {
     dateInput.min = `${yyyy}-${mm}-${dd}`;
   }
 
-  // 6. Smooth Scroll for all internal anchors
+  // 6. Interactive Service Tabs (The Animal Doctors International Luxury Style)
+  const tabBtns = document.querySelectorAll('.service-tab-btn');
+  const tabPanels = document.querySelectorAll('.service-tab-panel');
+
+  if (tabBtns.length > 0) {
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-tab');
+        if (!targetId) return;
+
+        tabBtns.forEach(b => b.classList.remove('active'));
+        tabPanels.forEach(p => p.classList.remove('active'));
+
+        btn.classList.add('active');
+        const targetPanel = document.getElementById(targetId);
+        if (targetPanel) {
+          targetPanel.classList.add('active');
+        }
+      });
+    });
+  }
+
+  // 7. Smooth Scroll for all internal anchors
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');

@@ -134,32 +134,99 @@
     </div>
   </section>
 
-  <!-- Promotions Highlight -->
+  <!-- Promotions Highlight: Interactive Voucher Cards with Sawtooth Perforation -->
   <section class="promo-section" id="promotions">
     <div class="container">
-      <div class="promo-grid">
-        <div class="promo-card">
-          <img src="assets/images/ngua-dai.png" alt="Tiêm ngừa dại" class="promo-img">
-          <div class="promo-info">
-            <span class="promo-tag">Đặc Quyền 0Đ</span>
-            <h4>Tiêm Ngừa Dại Miễn Phí</h4>
-            <p>Bảo vệ sức khỏe bé cưng và cả gia đình an toàn tuyệt đối.</p>
+      <div class="section-header" style="margin-bottom: 40px;">
+        <div class="badge badge-primary"><i class="fa-solid fa-ticket"></i> Đặc Quyền Dành Cho Thú Cưng</div>
+        <h2 class="section-title">Voucher Ưu Đãi Y Khoa & Tri Ân Khách Hàng</h2>
+        <p class="section-subtitle">Doctor Pet chọn đồng hành lâu dài cùng sức khỏe bé cưng. Bấm vào từng voucher để xem chi tiết quyền lợi và nhận ưu đãi ngay!</p>
+      </div>
+
+      <div class="vouchers-grid">
+        <!-- Voucher 1: Tiêm dại & sổ giun miễn phí xuyên suốt -->
+        <div class="voucher-card" onclick="openVoucherModal('rabies')" role="button" tabindex="0" aria-label="Xem voucher tiêm dại và sổ giun miễn phí">
+          <!-- Răng cưa ở đầu voucher -->
+          <div class="voucher-sawtooth-wrap">
+            <div class="voucher-sawtooth-teeth"></div>
+          </div>
+
+          <div class="voucher-header">
+            <div class="voucher-badge-row">
+              <span class="voucher-type-badge"><i class="fa-solid fa-shield-cat"></i> CHƯƠNG TRÌNH DÀI HẠN</span>
+              <span class="voucher-status-badge badge-pulse">Áp Dụng Xuyên Suốt</span>
+            </div>
+            <div class="voucher-value-box">
+              <span class="voucher-value-prefix">MIỄN PHÍ</span>
+              <span class="voucher-value-main">0Đ</span>
+              <span class="voucher-value-sub">Tiêm Ngừa Dại & Sổ Giun</span>
+            </div>
+          </div>
+
+          <!-- Rãnh xé vé & đường gạch đứt -->
+          <div class="voucher-tear-line">
+            <span class="voucher-notch notch-left"></span>
+            <span class="voucher-dashed-line"></span>
+            <span class="voucher-notch notch-right"></span>
+          </div>
+
+          <div class="voucher-body">
+            <div class="voucher-thumb-wrap">
+              <img src="assets/images/tiem-dai-free.png" alt="Doctor Pet tiêm ngừa dại và sổ giun miễn phí" class="voucher-thumb">
+            </div>
+            <h3 class="voucher-title">Tiêm Ngừa Dại & Sổ Giun Miễn Phí Cho Chó Mèo</h3>
+            <p class="voucher-desc">Doctor Pet chọn làm điều này lâu dài để bảo vệ thú cưng và cộng đồng. Không giới hạn thời gian, không chờ đợt khuyến mãi.</p>
+            <ul class="voucher-perks">
+              <li><i class="fa-solid fa-circle-check"></i> <strong>01 Mũi tiêm ngừa dại</strong> chính hãng hoàn toàn 0đ</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>01 Liều thuốc sổ giun định kỳ</strong> chất lượng cao 0đ</li>
+              <li><i class="fa-solid fa-circle-check"></i> Bác sĩ kiểm tra sàng lọc thể trạng miễn phí trước tiêm</li>
+            </ul>
+            <div class="voucher-footer">
+              <span class="voucher-cta-text">Bấm xem chi tiết & nhận voucher <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
           </div>
         </div>
-        <div class="promo-card">
-          <img src="assets/images/dai-giun.png" alt="Xổ giun miễn phí" class="promo-img">
-          <div class="promo-info">
-            <span class="promo-tag">Tặng Kèm</span>
-            <h4>Tặng Gói Xổ Giun Định Kỳ</h4>
-            <p>Kiểm tra thể trạng, cân nặng và sổ giun tiêu chuẩn y khoa.</p>
+
+        <!-- Voucher 2: Mừng sinh nhật - Tri ân khách hàng đến hết năm -->
+        <div class="voucher-card voucher-secondary" onclick="openVoucherModal('birthday')" role="button" tabindex="0" aria-label="Xem voucher mừng sinh nhật Doctor Pet">
+          <!-- Răng cưa ở đầu voucher -->
+          <div class="voucher-sawtooth-wrap">
+            <div class="voucher-sawtooth-teeth"></div>
           </div>
-        </div>
-        <div class="promo-card">
-          <img src="assets/images/banner-uudai.jpg" alt="Ưu đãi triệt sản" class="promo-img">
-          <div class="promo-info">
-            <span class="promo-tag">Giảm 20%</span>
-            <h4>Triệt Sản Không Đau</h4>
-            <p>Đường mổ vi phẫu siêu nhỏ, bé tỉnh táo chỉ sau 4 tiếng.</p>
+
+          <div class="voucher-header voucher-header-secondary">
+            <div class="voucher-badge-row">
+              <span class="voucher-type-badge"><i class="fa-solid fa-cake-candles"></i> MỪNG SINH NHẬT</span>
+              <span class="voucher-status-badge badge-amber">Kéo Dài Hết Năm 2026</span>
+            </div>
+            <div class="voucher-value-box">
+              <span class="voucher-value-prefix">TIẾT KIỆM ĐẾN</span>
+              <span class="voucher-value-main">700.000Đ</span>
+              <span class="voucher-value-sub">Khám Tổng Quát & Triệt Sản</span>
+            </div>
+          </div>
+
+          <!-- Rãnh xé vé & đường gạch đứt -->
+          <div class="voucher-tear-line">
+            <span class="voucher-notch notch-left"></span>
+            <span class="voucher-dashed-line"></span>
+            <span class="voucher-notch notch-right"></span>
+          </div>
+
+          <div class="voucher-body">
+            <div class="voucher-thumb-wrap">
+              <img src="assets/images/uudai-sinhnhat.png" alt="Mừng sinh nhật Doctor Pet tri ân khách hàng" class="voucher-thumb">
+            </div>
+            <h3 class="voucher-title">Mừng Sinh Nhật Doctor Pet – Tri Ân Khách Hàng Thân Yêu</h3>
+            <p class="voucher-desc">Tri ân sự tin chọn của ba mẹ thú cưng với 2 gói chăm sóc đặc biệt được kéo dài áp dụng đến hết năm 2026.</p>
+            <ul class="voucher-perks">
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Gói Khám toàn diện 4 trong 1:</strong> chỉ 900.000đ (Gốc 1.300.000đ)</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Gói Triệt sản an toàn:</strong> TẶNG CẠO VÔI RĂNG 700.000đ</li>
+              <li><i class="fa-solid fa-circle-check"></i> Tặng kèm voucher sổ giun 2 lần tiếp theo hoàn toàn miễn phí</li>
+            </ul>
+            <div class="voucher-footer">
+              <span class="voucher-cta-text">Bấm xem chi tiết & nhận voucher <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
           </div>
         </div>
       </div>
@@ -672,6 +739,14 @@
     <a href="#booking" class="float-btn float-booking" title="Đặt lịch hẹn">
       <i class="fa-regular fa-calendar-check"></i>
     </a>
+  <!-- Voucher Detail Modal -->
+  <div class="modal-overlay" id="voucherDetailModal">
+    <div class="modal-content voucher-modal-box">
+      <button class="modal-close-icon" id="closeVoucherModalBtn" aria-label="Đóng"><i class="fa-solid fa-xmark"></i></button>
+      <div class="voucher-modal-scroll" id="voucherModalDynamicContent">
+        <!-- Content will be injected dynamically via JS -->
+      </div>
+    </div>
   </div>
 
   <!-- Success Modal -->

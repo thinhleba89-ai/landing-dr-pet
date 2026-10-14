@@ -733,18 +733,20 @@ button, input, select, textarea {
 
 .voucher-thumb-wrap {
   width: 100%;
-  height: 210px;
+  aspect-ratio: 16 / 9;
+  height: auto;
   border-radius: var(--radius-md);
   overflow: hidden;
   margin-bottom: 20px;
   border: 1px solid var(--color-border);
-  background: #002957;
+  background: #F8FAFC;
 }
 
 .voucher-thumb {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform 0.4s ease;
 }
 
@@ -975,12 +977,18 @@ button, input, select, textarea {
   overflow: hidden;
   box-shadow: var(--shadow-md);
   border: 3px solid #FFFFFF;
+  background: #F8FAFC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 380px;
 }
 
 .tab-panel-visual img {
   width: 100%;
-  height: 340px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .tab-panel-badge {

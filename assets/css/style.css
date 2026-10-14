@@ -1429,8 +1429,8 @@ button, input, select, textarea {
 }
 
 .review-avatar {
-  width: 46px;
-  height: 46px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: var(--color-primary-soft);
   color: var(--color-primary);
@@ -1441,7 +1441,15 @@ button, input, select, textarea {
   font-size: 1.05rem;
   flex-shrink: 0;
   border: 2px solid #FFFFFF;
-  box-shadow: 0 2px 8px rgba(0, 41, 87, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 41, 87, 0.12);
+  overflow: hidden;
+}
+
+.review-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .review-author-meta {
@@ -1449,7 +1457,7 @@ button, input, select, textarea {
 }
 
 .review-author-name {
-  font-size: 1.02rem;
+  font-size: 1.05rem;
   font-weight: 800;
   color: var(--color-dark);
   display: flex;
@@ -1462,9 +1470,23 @@ button, input, select, textarea {
   font-size: 0.9rem;
 }
 
+.review-guide-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #E37400;
+  background: #FEF7E0;
+  padding: 1px 7px;
+  border-radius: var(--radius-full);
+  margin-left: 6px;
+}
+
 .review-date-text {
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: var(--color-text-muted);
+  margin-top: 2px;
 }
 
 .review-stars-row {
@@ -1485,12 +1507,13 @@ button, input, select, textarea {
 }
 
 .review-quote-content {
-  font-size: 0.94rem;
+  font-size: 0.92rem;
   color: var(--color-text-body);
-  line-height: 1.6;
-  margin-bottom: 16px;
+  line-height: 1.62;
+  margin-bottom: 14px;
   flex-grow: 1;
   position: relative;
+  white-space: pre-line;
 }
 
 .review-quote-content::before {
@@ -1501,6 +1524,33 @@ button, input, select, textarea {
   top: -14px;
   left: -10px;
   font-family: serif;
+}
+
+/* Owner Reply Box */
+.review-owner-reply {
+  background: #F8FAFC;
+  border-left: 3px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 0.84rem;
+  color: var(--color-dark-muted);
+  line-height: 1.5;
+}
+
+.owner-reply-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 800;
+  font-size: 0.8rem;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+
+.owner-reply-header i {
+  color: #1A73E8;
 }
 
 .review-google-stamp {

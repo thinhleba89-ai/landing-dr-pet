@@ -503,33 +503,90 @@
         <p class="section-subtitle">Quy trình khoa học giúp chẩn đoán chính xác, rút ngắn thời gian và tối ưu hiệu quả hồi phục cho thú cưng.</p>
       </div>
 
-      <div class="workflow-grid">
-        <div class="workflow-card">
-          <span class="step-number">01</span>
-          <div class="step-icon"><i class="fa-solid fa-clipboard-user"></i></div>
-          <h3 class="step-title">Tiếp Nhận & Đo Sinh Hiệu</h3>
-          <p class="step-desc">Ghi nhận triệu chứng, cân nặng, thân nhiệt, nhịp tim và tiền sử bệnh lý của bé.</p>
+      <div class="workflow-timeline-wrapper">
+        <div class="workflow-grid">
+          <!-- Step 1 -->
+          <div class="workflow-card">
+            <div class="step-card-header">
+              <span class="step-badge">Bước 01</span>
+              <span class="step-number-ghost">01</span>
+            </div>
+            <div class="step-icon-wrap">
+              <div class="step-icon"><i class="fa-solid fa-clipboard-user"></i></div>
+            </div>
+            <h3 class="step-title">Tiếp Nhận & Đo Sinh Hiệu</h3>
+            <p class="step-desc">Khám sàng lọc ban đầu, đo huyết áp, nhịp tim, thân nhiệt và kiểm tra thể trạng chi tiết.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="workflow-card">
+            <div class="step-card-header">
+              <span class="step-badge">Bước 02</span>
+              <span class="step-number-ghost">02</span>
+            </div>
+            <div class="step-icon-wrap">
+              <div class="step-icon"><i class="fa-solid fa-microscope"></i></div>
+            </div>
+            <h3 class="step-title">Chẩn Đoán Cận Lâm Sàng</h3>
+            <p class="step-desc">Siêu âm Doppler màu, chụp X-quang kỹ thuật số hoặc xét nghiệm sinh hóa tự động trong 15 phút.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="workflow-card">
+            <div class="step-card-header">
+              <span class="step-badge">Bước 03</span>
+              <span class="step-number-ghost">03</span>
+            </div>
+            <div class="step-icon-wrap">
+              <div class="step-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+            </div>
+            <h3 class="step-title">Tư Vấn Phác Đồ & Chi Phí</h3>
+            <p class="step-desc">Bác sĩ phân tích kết quả, giải thích lộ trình điều trị và thống nhất chi phí minh bạch trước khi làm.</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="workflow-card">
+            <div class="step-card-header">
+              <span class="step-badge">Bước 04</span>
+              <span class="step-number-ghost">04</span>
+            </div>
+            <div class="step-icon-wrap">
+              <div class="step-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            </div>
+            <h3 class="step-title">Điều Trị & Chăm Sóc Y Khoa</h3>
+            <p class="step-desc">Phẫu thuật vô trùng, điều trị theo dõi sát sinh hiệu, 100% thuốc & vaccine chính hãng rõ nguồn gốc.</p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="workflow-card">
+            <div class="step-card-header">
+              <span class="step-badge">Bước 05</span>
+              <span class="step-number-ghost">05</span>
+            </div>
+            <div class="step-icon-wrap">
+              <div class="step-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            </div>
+            <h3 class="step-title">Tái Khám & Đồng Hành</h3>
+            <p class="step-desc">Bác sĩ theo dõi tốc độ hồi phục, tái khám định kỳ miễn phí và chủ động nhắc lịch chăm sóc sức khỏe.</p>
+          </div>
         </div>
 
-        <div class="workflow-card">
-          <span class="step-number">02</span>
-          <div class="step-icon"><i class="fa-solid fa-x-ray"></i></div>
-          <h3 class="step-title">Cận Lâm Sàng & Xét Nghiệm</h3>
-          <p class="step-desc">Tiến hành siêu âm, chụp X-quang hoặc xét nghiệm sinh hóa theo chỉ định chuyên khoa.</p>
-        </div>
-
-        <div class="workflow-card">
-          <span class="step-number">03</span>
-          <div class="step-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
-          <h3 class="step-title">Tư Vấn Phác Đồ & Chi Phí</h3>
-          <p class="step-desc">Bác sĩ phân tích chi tiết kết quả, giải thích lộ trình điều trị và thống nhất chi phí minh bạch.</p>
-        </div>
-
-        <div class="workflow-card">
-          <span class="step-number">04</span>
-          <div class="step-icon"><i class="fa-solid fa-heart-circle-bolt"></i></div>
-          <h3 class="step-title">Điều Trị & Chăm Sóc Hậu Mổ</h3>
-          <p class="step-desc">Thực hiện điều trị, dùng thuốc chính hãng, hướng dẫn theo dõi tại nhà hoặc nhập viện nội trú.</p>
+        <!-- Trust bar below workflow -->
+        <div class="workflow-trust-bar">
+          <div class="trust-bar-item">
+            <i class="fa-solid fa-shield-check"></i>
+            <span><strong>100% Chuẩn Y Khoa:</strong> Dựa trên y học chứng cứ, không vẽ bệnh</span>
+          </div>
+          <div class="trust-bar-divider"></div>
+          <div class="trust-bar-item">
+            <i class="fa-solid fa-file-contract"></i>
+            <span><strong>Minh Bạch Chi Phí:</strong> Báo giá rõ ràng, không phụ thu bất ngờ</span>
+          </div>
+          <div class="trust-bar-divider"></div>
+          <div class="trust-bar-item">
+            <i class="fa-solid fa-user-doctor"></i>
+            <span><strong>Đồng Hành 24/7:</strong> Bác sĩ theo sát thể trạng bé xuyên suốt</span>
+          </div>
         </div>
       </div>
     </div>

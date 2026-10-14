@@ -535,68 +535,323 @@
     </div>
   </section>
 
-  <!-- Pricing Table -->
+  <!-- Pricing Section with Interactive Tabs & Concise Real Packages -->
   <section class="pricing-section" id="pricing">
     <div class="container">
       <div class="section-header">
         <div class="badge badge-primary">Bảng Giá Minh Bạch</div>
-        <h2 class="section-title">Chi Phí Rõ Ràng - Dịch Vụ Chuẩn Mực</h2>
-        <p class="section-subtitle">Doctor Pet công khai giá mọi dịch vụ để bạn hoàn toàn an tâm khi đưa bé tới thăm khám.</p>
+        <h2 class="section-title">Bảng Giá Gói Khám & Dịch Vụ Chuẩn Y Khoa</h2>
+        <p class="section-subtitle">Doctor Pet công khai chi phí rõ ràng — Ba mẹ dễ dàng nắm rõ gói khám bao nhiêu tiền và bao gồm những dịch vụ gì.</p>
       </div>
 
-      <div class="pricing-grid">
-        <!-- Plan 1 -->
-        <div class="pricing-card">
-          <div class="pricing-header">
-            <h3 class="pricing-name">Gói Khám Tổng Quát</h3>
-            <div class="pricing-cost">150.000<span class="pricing-unit"> đ</span></div>
-            <p class="pricing-unit">Dành cho kiểm tra định kỳ</p>
-          </div>
-          <ul class="pricing-features">
-            <li><i class="fa-solid fa-check"></i> Khám lâm sàng toàn diện 10 cơ quan</li>
-            <li><i class="fa-solid fa-check"></i> Kiểm tra mắt, mũi, tai, răng miệng</li>
-            <li><i class="fa-solid fa-check"></i> Soi kính hiển vi kiểm tra ve rận</li>
-            <li><i class="fa-solid fa-check"></i> Tư vấn dinh dưỡng và phòng bệnh</li>
-            <li><i class="fa-solid fa-check"></i> Tặng 01 lần xổ giun miễn phí</li>
-          </ul>
-          <a href="#booking" class="btn btn-outline">Chọn Gói Này</a>
-        </div>
+      <!-- Pricing Category Tabs Switcher -->
+      <div class="pricing-tabs-nav">
+        <button type="button" class="pricing-tab-btn active" data-tab="tab-checkup-packages">
+          <i class="fa-solid fa-stethoscope"></i>
+          <span>Các Gói Khám Sức Khỏe</span>
+        </button>
+        <button type="button" class="pricing-tab-btn" data-tab="tab-spay-packages">
+          <i class="fa-solid fa-shield-cat"></i>
+          <span>Gói Triệt Sản Trọn Gói</span>
+        </button>
+        <button type="button" class="pricing-tab-btn" data-tab="tab-single-services">
+          <i class="fa-solid fa-list-check"></i>
+          <span>Bảng Giá Dịch Vụ Lẻ</span>
+        </button>
+      </div>
 
-        <!-- Plan 2 (Featured) -->
-        <div class="pricing-card featured">
-          <span class="pricing-card-badge">Phổ Biến Nhất</span>
-          <div class="pricing-header">
-            <h3 class="pricing-name">Gói Triệt Sản An Toàn</h3>
-            <div class="pricing-cost">450.000<span class="pricing-unit"> đ - 850.000 đ</span></div>
-            <p class="pricing-unit">Tùy giống loài & cân nặng</p>
+      <!-- TAB 1: Gói Khám Sức Khỏe (Ngắn gọn, súc tích) -->
+      <div class="pricing-tab-panel active" id="tab-checkup-packages">
+        <div class="pricing-grid">
+          <!-- Gói 1: Khởi Đầu Khỏe Mạnh -->
+          <div class="pricing-card">
+            <span class="pricing-target">Thú cưng mới đón về (&lt; 4 tháng)</span>
+            <div class="pricing-header">
+              <h3 class="pricing-name">Khởi Đầu Khỏe Mạnh</h3>
+              <div class="pricing-price-box">
+                <span class="pricing-original">1.420.000 đ</span>
+                <span class="pricing-cost">1.200.000</span>
+                <span class="pricing-unit">đ</span>
+              </div>
+              <span class="pricing-saving-pill">Tiết kiệm 220.000 đ</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Khám lâm sàng:</strong> Bác sĩ thăm khám toàn diện &amp; tư vấn dinh dưỡng</div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Vệ sinh &amp; soi da:</strong> Kiểm tra tai, răng miệng, soi đèn Wood's nấm da</div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Soi kính hiển vi:</strong> Tầm soát rận tai, ký sinh trùng &amp; phân</div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Tẩy giun sán:</strong> Thuốc sổ giun Sanpet chính hãng</div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Tiêm phòng 4 liều:</strong> Vaccine 5 bệnh, 7 bệnh x 2 mũi và Vaccine dại</div></li>
+            </ul>
+            <a href="#booking" class="btn btn-outline" style="width: 100%; text-align: center;">Đặt Lịch Gói Này</a>
           </div>
-          <ul class="pricing-features">
-            <li><i class="fa-solid fa-check"></i> Xét nghiệm đông máu trước mổ</li>
-            <li><i class="fa-solid fa-check"></i> Gây mê bay hơi Isoflurane tiêu chuẩn</li>
-            <li><i class="fa-solid fa-check"></i> Kỹ thuật mổ vi phẫu siêu nhỏ</li>
-            <li><i class="fa-solid fa-check"></i> Khâu thẩm mỹ chỉ tự tiêu</li>
-            <li><i class="fa-solid fa-check"></i> Thuốc giảm đau và kháng sinh 5 ngày</li>
-            <li><i class="fa-solid fa-check"></i> Lưu viện theo dõi hồi tỉnh 4-6h</li>
-          </ul>
-          <a href="#booking" class="btn btn-primary">Đặt Lịch Triệt Sản</a>
-        </div>
 
-        <!-- Plan 3 -->
-        <div class="pricing-card">
-          <div class="pricing-header">
-            <h3 class="pricing-name">Gói Tầm Soát Toàn Diện</h3>
-            <div class="pricing-cost">690.000<span class="pricing-unit"> đ</span></div>
-            <p class="pricing-unit">Định kỳ 6 tháng / lần</p>
+          <!-- Gói 2: Khám Định Kỳ 1 Năm (Featured) -->
+          <div class="pricing-card featured">
+            <span class="pricing-card-badge">Khuyên Dùng • Phổ Biến Nhất</span>
+            <span class="pricing-target">Chăm sóc 1 năm (Khám 2 lần/năm)</span>
+            <div class="pricing-header">
+              <h3 class="pricing-name">Khám Định Kỳ 1 Năm</h3>
+              <div class="pricing-price-box">
+                <span class="pricing-original">3.440.000 đ</span>
+                <span class="pricing-cost">2.900.000</span>
+                <span class="pricing-unit">đ / năm</span>
+              </div>
+              <span class="pricing-saving-pill">Chỉ 1.450.000 đ cho mỗi lần khám</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>2 lần khám tổng quát:</strong> Khám lâm sàng chuyên sâu với Bác sĩ Nội khoa</div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Siêu âm màu ổ bụng:</strong> Tầm soát gan, thận, mật, bàng quang và tiêu hóa</div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Xét nghiệm công thức máu:</strong> Kiểm tra 4 dòng bạch cầu &amp; thiếu máu</div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Sinh hóa chuyên sâu 23 chỉ số:</strong> Đánh giá chức năng gan, thận, tụy, mỡ máu</div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Chăm sóc cơ bản:</strong> Vệ sinh tai, khám răng miệng &amp; soi da đèn Wood's</div></li>
+            </ul>
+            <a href="#booking" class="btn btn-primary" style="width: 100%; text-align: center;">Đặt Lịch Khám Định Kỳ</a>
           </div>
-          <ul class="pricing-features">
-            <li><i class="fa-solid fa-check"></i> Khám tổng quát chuyên sâu với bác sĩ</li>
-            <li><i class="fa-solid fa-check"></i> Siêu âm màu toàn bộ ổ bụng</li>
-            <li><i class="fa-solid fa-check"></i> Xét nghiệm sinh hóa gan & thận</li>
-            <li><i class="fa-solid fa-check"></i> Tổng phân tích tế bào máu ngoại vi</li>
-            <li><i class="fa-solid fa-check"></i> Lưu hồ sơ bệnh án điện tử trọn đời</li>
-          </ul>
-          <a href="#booking" class="btn btn-outline">Chọn Gói Này</a>
+
+          <!-- Gói 3: Tầm Soát Toàn Diện SOS -->
+          <div class="pricing-card">
+            <span class="pricing-target">Bé có biểu hiện lạ / Cần tầm soát sâu</span>
+            <div class="pricing-header">
+              <h3 class="pricing-name">Tầm Soát Toàn Diện SOS</h3>
+              <div class="pricing-price-box">
+                <span class="pricing-original">4.570.000 đ</span>
+                <span class="pricing-cost">3.900.000</span>
+                <span class="pricing-unit">đ</span>
+              </div>
+              <span class="pricing-saving-pill">Tiết kiệm 670.000 đ</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Đánh giá thể trạng:</strong> Thăm khám lâm sàng tìm nguyên nhân bất thường</div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Chụp X-quang kỹ thuật số:</strong> Chụp ngực thẳng &amp; nghiêng 2 tấm</div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Siêu âm bụng tổng quát:</strong> Đánh giá chi tiết toàn bộ các cơ quan nội tạng</div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Máu AI &amp; Khí máu:</strong> Sinh lý máu AI Maxpro, Khí máu - Điện giải (spO2)</div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Sinh hóa 23 chỉ số &amp; Test dịch bệnh:</strong> Test Care, Parvo/FPV, Viêm CRP/SAA</div></li>
+            </ul>
+            <a href="#booking" class="btn btn-outline" style="width: 100%; text-align: center;">Đặt Lịch Tầm Soát SOS</a>
+          </div>
         </div>
+      </div>
+
+      <!-- TAB 2: Gói Triệt Sản Trọn Gói (Chó & Mèo) -->
+      <div class="pricing-tab-panel" id="tab-spay-packages">
+        <div class="spay-pricing-grid">
+          <!-- Card Mèo -->
+          <div class="spay-card">
+            <div class="spay-card-top">
+              <div class="spay-card-icon"><i class="fa-solid fa-cat"></i></div>
+              <div class="spay-card-title">
+                <h3>Gói Triệt Sản Trọn Gói Cho Mèo</h3>
+                <p>Kỹ thuật vi phẫu thẩm mỹ, gây mê hồi tỉnh an toàn</p>
+              </div>
+            </div>
+
+            <table class="spay-rates-table">
+              <thead>
+                <tr>
+                  <th>Đối tượng</th>
+                  <th>Cân nặng &lt; 5kg</th>
+                  <th>Cân nặng &gt; 5kg</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Mèo Đực</strong></td>
+                  <td>
+                    <span class="spay-price-tag">2.090.000 đ</span>
+                    <span class="spay-single-price">Thiến lẻ: 200.000 đ</span>
+                  </td>
+                  <td>
+                    <span class="spay-price-tag">2.330.000 đ</span>
+                    <span class="spay-single-price">Thiến lẻ: 300.000 đ</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Mèo Cái</strong></td>
+                  <td>
+                    <span class="spay-price-tag">2.340.000 đ</span>
+                    <span class="spay-single-price">Mổ lẻ: 500.000 đ</span>
+                  </td>
+                  <td>
+                    <span class="spay-price-tag">2.680.000 đ</span>
+                    <span class="spay-single-price">Mổ lẻ: 600.000 đ</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="spay-perks-box">
+              <h5><i class="fa-solid fa-shield-check"></i> Trọn gói đã bao gồm đầy đủ:</h5>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> Xét nghiệm sinh lý máu &amp; Sinh hóa máu 23 chỉ tiêu trước mổ</li>
+                <li><i class="fa-solid fa-check"></i> Phẫu thuật bởi Thạc sĩ Bác sĩ có chuyên môn cao</li>
+                <li><i class="fa-solid fa-check"></i> Truyền dịch hồi mê, thuốc giảm đau &amp; kháng sinh 5 ngày</li>
+                <li><i class="fa-solid fa-check"></i> Lưu trú theo dõi tại phòng khám cho đến khi bé tỉnh táo hoàn toàn</li>
+              </ul>
+            </div>
+
+            <a href="#booking" class="btn btn-primary" style="width: 100%; text-align: center;">Đặt Lịch Triệt Sản Mèo</a>
+          </div>
+
+          <!-- Card Chó -->
+          <div class="spay-card">
+            <div class="spay-card-top">
+              <div class="spay-card-icon"><i class="fa-solid fa-dog"></i></div>
+              <div class="spay-card-title">
+                <h3>Gói Triệt Sản Trọn Gói Cho Chó</h3>
+                <p>Đường mổ siêu nhỏ, chỉ tự tiêu, hồi phục nhanh trong 3-5 ngày</p>
+              </div>
+            </div>
+
+            <table class="spay-rates-table">
+              <thead>
+                <tr>
+                  <th>Đối tượng</th>
+                  <th>Cân nặng &lt; 10kg</th>
+                  <th>Cân nặng &gt; 10kg</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Chó Đực</strong></td>
+                  <td>
+                    <span class="spay-price-tag">2.480.000 đ</span>
+                    <span class="spay-single-price">Thiến lẻ: 300.000 đ</span>
+                  </td>
+                  <td>
+                    <span class="spay-price-tag">2.990.000 đ</span>
+                    <span class="spay-single-price">Thiến lẻ: 550.000 đ</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Chó Cái</strong></td>
+                  <td>
+                    <span class="spay-price-tag">2.830.000 đ</span>
+                    <span class="spay-single-price">Mổ lẻ: 600.000 đ</span>
+                  </td>
+                  <td>
+                    <span class="spay-price-tag">3.540.000 đ</span>
+                    <span class="spay-single-price">Mổ lẻ: 900.000 đ</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="spay-perks-box">
+              <h5><i class="fa-solid fa-shield-check"></i> Trọn gói đã bao gồm đầy đủ:</h5>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> Xét nghiệm sinh lý máu &amp; Sinh hóa máu 23 chỉ tiêu trước mổ</li>
+                <li><i class="fa-solid fa-check"></i> Phẫu thuật bởi Thạc sĩ Bác sĩ có chuyên môn cao</li>
+                <li><i class="fa-solid fa-check"></i> Truyền dịch hồi mê, thuốc giảm đau &amp; kháng sinh 5 ngày</li>
+                <li><i class="fa-solid fa-check"></i> Lưu trú theo dõi tại phòng khám cho đến khi bé tỉnh táo hoàn toàn</li>
+              </ul>
+            </div>
+
+            <a href="#booking" class="btn btn-primary" style="width: 100%; text-align: center;">Đặt Lịch Triệt Sản Chó</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3: Bảng Giá Dịch Vụ Lẻ Minh Bạch -->
+      <div class="pricing-tab-panel" id="tab-single-services">
+        <div class="services-detail-grid">
+          <!-- Nhóm 1: Khám & Chẩn Đoán Hình Ảnh -->
+          <div class="service-category-box">
+            <div class="service-category-header">
+              <div class="service-category-icon"><i class="fa-solid fa-stethoscope"></i></div>
+              <h4>Khám &amp; Chẩn Đoán Hình Ảnh</h4>
+            </div>
+            <div class="service-item-row">
+              <div class="service-item-info">
+                <h5>Thăm khám lâm sàng &amp; tư vấn dinh dưỡng</h5>
+                <p>Khám nội khoa, ngoại khoa, kiểm tra sinh hiệu tổng quát</p>
+              </div>
+              <span class="service-item-cost">200.000 đ</span>
+            </div>
+            <div class="service-item-row">
+              <div class="service-item-info">
+                <h5>Siêu âm bụng tổng quát</h5>
+                <p>Kiểm tra gan, thận, bàng quang, tiêu hóa và tử cung</p>
+              </div>
+              <span class="service-item-cost">250.000 đ</span>
+            </div>
+            <div class="service-item-row">
+              <div class="service-item-info">
+                <h5>Chụp X-quang kỹ thuật số (2 tấm)</h5>
+                <p>Chụp ngực thẳng và nghiêng kiểm tra tim, phổi hoặc xương khớp</p>
+              </div>
+              <span class="service-item-cost">500.000 đ</span>
+            </div>
+            <div class="service-item-row">
+              <div class="service-item-info">
+                <h5>Khám nấm da (Đèn Wood's Lamp)</h5>
+                <p>Tầm soát vi nấm phát quang trên bề mặt da và lông</p>
+              </div>
+              <span class="service-item-cost">120.000 đ</span>
+            </div>
+            <div class="service-item-row">
+              <div class="service-item-info">
+                <h5>Soi kính hiển vi kiểm tra rận tai / tế bào</h5>
+                <p>Lấy mẫu soi tìm rận tai, vi khuẩn hoặc hình thái máu</p>
+              </div>
+              <span class="service-item-cost">150.000 - 300.000 đ</span>
+            </div>
+          </div>
+
+          <!-- Nhóm 2: Xét Nghiệm & Tiêm Ngừa -->
+          <div class="service-category-box">
+            <div class="service-category-header">
+              <div class="service-category-icon"><i class="fa-solid fa-vial"></i></div>
+              <h4>Xét Nghiệm Máu &amp; Tiêm Chủng</h4>
+            </div>
+            <div class="service-item-row">
+              <div class="service-item-info">
+                <h5>Xét nghiệm sinh lý máu (Công thức máu)</h5>
+                <p>Đánh giá dòng hồng cầu, bạch cầu, tiểu cầu và thiếu máu</p>
+              </div>
+              <span class="service-item-cost">250.000 - 350.000 đ</span>
+            </div>
+            <div class="service-item-row">
+              <div class="service-item-info">
+                <h5>Xét nghiệm sinh hóa máu chuyên sâu 23 chỉ số</h5>
+                <p>Đánh giá toàn diện chức năng gan, thận, tụy, mật, mỡ máu, đường huyết</p>
+              </div>
+              <span class="service-item-cost">700.000 đ</span>
+            </div>
+            <div class="service-item-row">
+              <div class="service-item-info">
+                <h5>Tiêm phòng Vaccine 5 bệnh / 7 bệnh (Chó &amp; Mèo)</h5>
+                <p>Vaccine nhập khẩu chính hãng bảo vệ các bệnh nguy hiểm</p>
+              </div>
+              <span class="service-item-cost">200.000 - 250.000 đ</span>
+            </div>
+            <div class="service-item-row">
+              <div class="service-item-info">
+                <h5>Tiêm phòng Vaccine Dại Biorabies (Argentina)</h5>
+                <p>Chương trình hỗ trợ cộng đồng xuyên suốt tại phòng khám</p>
+              </div>
+              <span class="service-item-cost" style="color: #10B981; font-weight: 800;">0 Đ (Miễn Phí)</span>
+            </div>
+            <div class="service-item-row">
+              <div class="service-item-info">
+                <h5>Lưu trú theo dõi sức khỏe nội trú</h5>
+                <p>Phòng cách ly sạch sẽ, bác sĩ theo dõi 24/7 kèm dinh dưỡng</p>
+              </div>
+              <span class="service-item-cost">120.000 - 160.000 đ / ngày</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Transparency Guarantee Callout -->
+      <div class="pricing-guarantee-bar">
+        <p>
+          <i class="fa-solid fa-circle-check"></i>
+          <span><strong>Cam kết chuẩn y khoa:</strong> Bác sĩ luôn tư vấn phương án điều trị và thông báo chi phí trước khi thực hiện. Tuyệt đối không ép dịch vụ.</span>
+        </p>
+        <a href="#booking" class="btn btn-secondary">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Đặt Lịch Thăm Khám Ngay</span>
+        </a>
       </div>
     </div>
   </section>

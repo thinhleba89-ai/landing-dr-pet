@@ -278,6 +278,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 6b. Interactive Pricing Tabs
+  const pricingTabBtns = document.querySelectorAll('.pricing-tab-btn');
+  const pricingTabPanels = document.querySelectorAll('.pricing-tab-panel');
+
+  if (pricingTabBtns.length > 0) {
+    pricingTabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-tab');
+        if (!targetId) return;
+
+        pricingTabBtns.forEach(b => b.classList.remove('active'));
+        pricingTabPanels.forEach(p => p.classList.remove('active'));
+
+        btn.classList.add('active');
+        const targetPanel = document.getElementById(targetId);
+        if (targetPanel) {
+          targetPanel.classList.add('active');
+        }
+      });
+    });
+  }
+
   // 7. Smooth Scroll for all internal anchors
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

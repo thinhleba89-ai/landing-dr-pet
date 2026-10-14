@@ -1,43 +1,47 @@
 /* ==========================================================================
    DOCTOR PET - PHÒNG KHÁM THÚ Y CHUẨN Y KHOA QUẬN 7
    Design System & Main Stylesheet
+   Brand Color Palette Synchronized with Logo: Deep Navy (#002957) & White (#FFFFFF)
    ========================================================================== */
 
 :root {
-  /* Brand Color Palette */
-  --color-primary: #0A7E6C;
-  --color-primary-dark: #065B4E;
-  --color-primary-light: #10B981;
-  --color-primary-soft: #E6F7F4;
-  --color-primary-glow: rgba(10, 126, 108, 0.25);
+  /* Brand Color Palette (Synchronized with Doctor Pet Logo) */
+  --color-primary: #002957;           /* Logo Deep Navy */
+  --color-primary-dark: #001C3D;      /* Darker Midnight Navy */
+  --color-primary-light: #0B5CAB;     /* Vibrant Royal Blue Accent */
+  --color-primary-bright: #0284C7;    /* Medical Cerulean Highlight */
+  --color-primary-soft: #EAF2FA;      /* Subtle Navy/Ice Tint */
+  --color-primary-glow: rgba(0, 41, 87, 0.25);
 
-  --color-secondary: #FF6B4A;
-  --color-secondary-dark: #E25534;
-  --color-secondary-soft: #FFF1EE;
+  /* Secondary & Accents for High-Converting CTAs */
+  --color-secondary: #FF6B35;         /* Warm Medical Coral/Orange for CTAs */
+  --color-secondary-dark: #E8551E;
+  --color-secondary-soft: #FFF2ED;
 
-  --color-accent-amber: #F59E0B;
   --color-accent-blue: #0284C7;
+  --color-accent-gold: #F59E0B;
+  --color-emergency: #DC2626;
 
   /* Neutrals */
-  --color-dark: #0F172A;
-  --color-dark-muted: #334155;
-  --color-text-body: #475569;
-  --color-text-muted: #64748B;
+  --color-dark: #0A192F;
+  --color-dark-muted: #1E3A5F;
+  --color-text-body: #334E68;
+  --color-text-muted: #627D98;
   --color-light: #FFFFFF;
-  --color-bg-alt: #F8FAFC;
+  --color-bg-alt: #F4F8FC;
   --color-bg-card: #FFFFFF;
-  --color-border: #E2E8F0;
-  --color-border-subtle: #F1F5F9;
+  --color-border: #D9E2EC;
+  --color-border-subtle: #E8EFF6;
 
   /* Typography */
   --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
 
   /* Transitions & Shadows */
-  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
-  --shadow-md: 0 4px 14px rgba(15, 23, 42, 0.08);
-  --shadow-lg: 0 10px 30px rgba(15, 23, 42, 0.1);
-  --shadow-xl: 0 20px 40px rgba(10, 126, 108, 0.15);
+  --shadow-sm: 0 1px 3px rgba(0, 41, 87, 0.08);
+  --shadow-md: 0 4px 14px rgba(0, 41, 87, 0.1);
+  --shadow-lg: 0 10px 30px rgba(0, 41, 87, 0.12);
+  --shadow-xl: 0 20px 40px rgba(0, 41, 87, 0.18);
   --shadow-colored: 0 12px 24px -6px var(--color-primary-glow);
   --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   --radius-sm: 8px;
@@ -111,18 +115,18 @@ button, input, select, textarea {
 .badge-primary {
   background-color: var(--color-primary-soft);
   color: var(--color-primary);
-  border: 1px solid rgba(10, 126, 108, 0.15);
+  border: 1px solid rgba(0, 41, 87, 0.15);
 }
 
 .badge-secondary {
   background-color: var(--color-secondary-soft);
   color: var(--color-secondary);
-  border: 1px solid rgba(255, 107, 74, 0.2);
+  border: 1px solid rgba(255, 107, 53, 0.25);
 }
 
 .section-header {
   text-align: center;
-  max-width: 720px;
+  max-width: 740px;
   margin: 0 auto 50px auto;
 }
 
@@ -132,11 +136,12 @@ button, input, select, textarea {
 
 .section-title {
   font-family: var(--font-heading);
-  font-size: 2.25rem;
+  font-size: 2.3rem;
   font-weight: 800;
   color: var(--color-dark);
   line-height: 1.25;
   margin-bottom: 14px;
+  letter-spacing: -0.01em;
 }
 
 .section-subtitle {
@@ -150,7 +155,7 @@ button, input, select, textarea {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 12px 26px;
+  padding: 13px 28px;
   border-radius: var(--radius-full);
   font-weight: 600;
   font-size: 0.95rem;
@@ -160,55 +165,58 @@ button, input, select, textarea {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
   color: #FFFFFF;
   box-shadow: 0 4px 16px var(--color-primary-glow);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
   box-shadow: 0 8px 24px var(--color-primary-glow);
   color: #FFFFFF;
 }
 
 .btn-secondary {
-  background: linear-gradient(135deg, var(--color-secondary), #FF8566);
+  background: linear-gradient(135deg, var(--color-secondary) 0%, #FF8552 100%);
   color: #FFFFFF;
-  box-shadow: 0 4px 16px rgba(255, 107, 74, 0.25);
+  box-shadow: 0 4px 16px rgba(255, 107, 53, 0.3);
 }
 
 .btn-secondary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(255, 107, 74, 0.35);
+  background: linear-gradient(135deg, var(--color-secondary-dark) 0%, var(--color-secondary) 100%);
+  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.4);
   color: #FFFFFF;
 }
 
 .btn-outline {
   background: transparent;
-  color: var(--color-dark);
-  border: 1.5px solid var(--color-border);
+  color: var(--color-primary);
+  border: 1.8px solid var(--color-primary);
 }
 
 .btn-outline:hover {
+  background: var(--color-primary);
+  color: #FFFFFF;
   border-color: var(--color-primary);
-  color: var(--color-primary);
-  background: var(--color-primary-soft);
+  box-shadow: 0 4px 14px var(--color-primary-glow);
 }
 
 .btn-lg {
-  padding: 16px 32px;
+  padding: 16px 34px;
   font-size: 1.05rem;
 }
 
 /* ==========================================================================
-   Top Bar & Header Navigation
+   Top Bar & Header Navigation (Branded Navy #002957)
    ========================================================================== */
 .top-bar {
-  background: #0A5A4E;
+  background: var(--color-primary-dark);
   color: rgba(255, 255, 255, 0.92);
   font-size: 0.85rem;
   padding: 8px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .top-bar-content {
@@ -230,23 +238,24 @@ button, input, select, textarea {
 }
 
 .top-bar-item a:hover {
-  color: #A7F3D0;
+  color: #93C5FD;
 }
 
 .top-bar-badge {
   background: var(--color-secondary);
   color: white;
-  padding: 2px 8px;
+  padding: 2px 10px;
   border-radius: var(--radius-full);
   font-size: 0.75rem;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .main-header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--color-border-subtle);
@@ -255,13 +264,14 @@ button, input, select, textarea {
 
 .main-header.scrolled {
   box-shadow: var(--shadow-md);
+  background: #FFFFFF;
 }
 
 .nav-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 82px;
 }
 
 .logo-group {
@@ -271,26 +281,27 @@ button, input, select, textarea {
 }
 
 .logo-group img {
-  height: 52px;
+  height: 54px;
   width: auto;
-  border-radius: 10px;
+  border-radius: 12px;
   object-fit: contain;
+  box-shadow: 0 2px 8px rgba(0, 41, 87, 0.15);
 }
 
 .brand-text h1 {
   font-family: var(--font-heading);
-  font-size: 1.35rem;
-  font-weight: 800;
-  color: var(--color-primary-dark);
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--color-primary);
   line-height: 1.1;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.02em;
 }
 
 .brand-text span {
   font-size: 0.78rem;
   color: var(--color-text-muted);
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -339,27 +350,27 @@ button, input, select, textarea {
   background: none;
   border: none;
   font-size: 1.6rem;
-  color: var(--color-dark);
+  color: var(--color-primary);
   cursor: pointer;
 }
 
 /* ==========================================================================
-   Hero Section
+   Hero Section (Navy Theme)
    ========================================================================== */
 .hero {
   position: relative;
-  padding: 70px 0 90px 0;
-  background: linear-gradient(180deg, #F0FDF8 0%, #FFFFFF 100%);
+  padding: 70px 0 95px 0;
+  background: linear-gradient(180deg, #F0F6FC 0%, #FFFFFF 100%);
   overflow: hidden;
 }
 
 .hero-glow-1 {
   position: absolute;
-  top: -100px;
+  top: -120px;
   left: -100px;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(11, 92, 171, 0.12) 0%, rgba(255, 255, 255, 0) 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -370,7 +381,7 @@ button, input, select, textarea {
   right: -80px;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(255, 107, 74, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(circle, rgba(0, 41, 87, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -388,7 +399,7 @@ button, input, select, textarea {
 
 .hero-title {
   font-family: var(--font-heading);
-  font-size: 3.1rem;
+  font-size: 3.2rem;
   font-weight: 800;
   color: var(--color-dark);
   line-height: 1.18;
@@ -397,7 +408,7 @@ button, input, select, textarea {
 }
 
 .hero-title .highlight {
-  background: linear-gradient(135deg, var(--color-primary), #0D9488);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 60%, var(--color-primary-bright) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -405,8 +416,8 @@ button, input, select, textarea {
 .hero-desc {
   font-size: 1.15rem;
   color: var(--color-text-muted);
-  line-height: 1.65;
-  margin-bottom: 32px;
+  line-height: 1.7;
+  margin-bottom: 34px;
 }
 
 .hero-ctas {
@@ -420,8 +431,8 @@ button, input, select, textarea {
 .hero-trust {
   display: flex;
   align-items: center;
-  gap: 32px;
-  padding-top: 24px;
+  gap: 36px;
+  padding-top: 26px;
   border-top: 1px solid var(--color-border);
 }
 
@@ -432,9 +443,9 @@ button, input, select, textarea {
 
 .trust-number {
   font-family: var(--font-heading);
-  font-size: 1.7rem;
+  font-size: 1.75rem;
   font-weight: 800;
-  color: var(--color-primary-dark);
+  color: var(--color-primary);
   line-height: 1.1;
 }
 
@@ -452,24 +463,25 @@ button, input, select, textarea {
   position: relative;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: 0 20px 45px rgba(10, 126, 108, 0.15);
+  box-shadow: 0 20px 45px rgba(0, 41, 87, 0.16);
   background: #FFFFFF;
   border: 4px solid #FFFFFF;
 }
 
 .hero-image-card img {
   width: 100%;
-  height: 480px;
+  height: 490px;
   object-fit: cover;
 }
 
 .floating-badge {
   position: absolute;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(12px);
   padding: 14px 18px;
   border-radius: var(--radius-md);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 41, 87, 0.12);
+  border: 1px solid rgba(0, 41, 87, 0.08);
   display: flex;
   align-items: center;
   gap: 12px;
@@ -510,7 +522,7 @@ button, input, select, textarea {
 .floating-text h4 {
   font-size: 0.95rem;
   font-weight: 800;
-  color: var(--color-dark);
+  color: var(--color-primary);
   line-height: 1.2;
 }
 
@@ -545,7 +557,7 @@ button, input, select, textarea {
   padding: 24px;
   border-radius: var(--radius-md);
   background: var(--color-bg-alt);
-  border: 1px solid var(--color-border);
+  border: 1.5px solid var(--color-border);
   transition: var(--transition);
 }
 
@@ -562,12 +574,13 @@ button, input, select, textarea {
   border-radius: var(--radius-sm);
   object-fit: cover;
   flex-shrink: 0;
+  box-shadow: var(--shadow-sm);
 }
 
 .promo-info h4 {
   font-size: 1.05rem;
   font-weight: 800;
-  color: var(--color-dark);
+  color: var(--color-primary);
   margin-bottom: 4px;
 }
 
@@ -588,11 +601,11 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   Services Section
+   Services Section (Navy Doctor Pet Styling)
    ========================================================================== */
 .services-section {
-  padding: 90px 0;
-  background: #F8FAFC;
+  padding: 95px 0;
+  background: #F4F8FC;
 }
 
 .services-grid {
@@ -629,7 +642,7 @@ button, input, select, textarea {
 .service-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: rgba(10, 126, 108, 0.2);
+  border-color: rgba(0, 41, 87, 0.2);
 }
 
 .service-card:hover::before {
@@ -637,8 +650,8 @@ button, input, select, textarea {
 }
 
 .service-icon-box {
-  width: 60px;
-  height: 60px;
+  width: 62px;
+  height: 62px;
   border-radius: var(--radius-md);
   background: var(--color-primary-soft);
   color: var(--color-primary);
@@ -654,6 +667,7 @@ button, input, select, textarea {
   background: var(--color-primary);
   color: #FFFFFF;
   transform: scale(1.05);
+  box-shadow: 0 6px 16px var(--color-primary-glow);
 }
 
 .service-title {
@@ -687,8 +701,8 @@ button, input, select, textarea {
 }
 
 .service-features li i {
-  color: var(--color-primary);
-  font-size: 0.8rem;
+  color: var(--color-primary-light);
+  font-size: 0.82rem;
 }
 
 .service-action {
@@ -701,7 +715,7 @@ button, input, select, textarea {
 }
 
 .service-action:hover {
-  color: var(--color-primary-dark);
+  color: var(--color-primary-light);
   gap: 10px;
 }
 
@@ -709,7 +723,7 @@ button, input, select, textarea {
    Evidence-Based / Quality Highlights
    ========================================================================== */
 .quality-section {
-  padding: 90px 0;
+  padding: 95px 0;
   background: #FFFFFF;
 }
 
@@ -736,18 +750,20 @@ button, input, select, textarea {
   position: absolute;
   bottom: -24px;
   right: -20px;
-  background: #0A7E6C;
+  background: var(--color-primary);
   color: #FFFFFF;
   padding: 24px;
   border-radius: var(--radius-md);
-  box-shadow: 0 15px 35px rgba(10, 126, 108, 0.3);
-  max-width: 260px;
+  box-shadow: 0 15px 35px var(--color-primary-glow);
+  max-width: 270px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .quality-badge-card h4 {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 800;
   margin-bottom: 6px;
+  letter-spacing: 0.01em;
 }
 
 .quality-badge-card p {
@@ -768,15 +784,15 @@ button, input, select, textarea {
 }
 
 .quality-icon {
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   border-radius: 12px;
   background: var(--color-primary-soft);
   color: var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   flex-shrink: 0;
 }
 
@@ -796,8 +812,8 @@ button, input, select, textarea {
    Workflow Steps
    ========================================================================== */
 .workflow-section {
-  padding: 90px 0;
-  background: #F1FDF8;
+  padding: 95px 0;
+  background: #EDF4FA;
 }
 
 .workflow-grid {
@@ -821,6 +837,7 @@ button, input, select, textarea {
 .workflow-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-md);
+  border-color: var(--color-primary-light);
 }
 
 .step-number {
@@ -830,7 +847,7 @@ button, input, select, textarea {
   font-family: var(--font-heading);
   font-size: 1.6rem;
   font-weight: 900;
-  color: #E2E8F0;
+  color: #CBD5E1;
 }
 
 .step-icon {
@@ -849,7 +866,7 @@ button, input, select, textarea {
 .step-title {
   font-size: 1.15rem;
   font-weight: 800;
-  color: var(--color-dark);
+  color: var(--color-primary);
   margin-bottom: 8px;
 }
 
@@ -862,7 +879,7 @@ button, input, select, textarea {
    Pricing Section
    ========================================================================== */
 .pricing-section {
-  padding: 90px 0;
+  padding: 95px 0;
   background: #FFFFFF;
 }
 
@@ -923,7 +940,7 @@ button, input, select, textarea {
   font-family: var(--font-heading);
   font-size: 2.2rem;
   font-weight: 900;
-  color: var(--color-primary-dark);
+  color: var(--color-primary);
 }
 
 .pricing-unit {
@@ -953,11 +970,11 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   Booking & Consultation Form Section
+   Booking & Consultation Form Section (Deep Doctor Pet Navy #002957)
    ========================================================================== */
 .booking-section {
-  padding: 90px 0;
-  background: linear-gradient(135deg, #064E43 0%, #0A7E6C 100%);
+  padding: 95px 0;
+  background: linear-gradient(135deg, #001C3D 0%, #002957 60%, #0B4A8B 100%);
   color: #FFFFFF;
   position: relative;
   overflow: hidden;
@@ -1007,7 +1024,7 @@ button, input, select, textarea {
 }
 
 .booking-perk-item i {
-  color: #34D399;
+  color: #60A5FA;
 }
 
 .booking-card {
@@ -1015,14 +1032,14 @@ button, input, select, textarea {
   color: var(--color-dark);
   padding: 40px;
   border-radius: var(--radius-lg);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
 }
 
 .booking-card h3 {
   font-family: var(--font-heading);
   font-size: 1.6rem;
   font-weight: 800;
-  color: var(--color-dark);
+  color: var(--color-primary);
   margin-bottom: 6px;
 }
 
@@ -1074,8 +1091,8 @@ button, input, select, textarea {
    Reviews / Testimonials
    ========================================================================== */
 .reviews-section {
-  padding: 90px 0;
-  background: #F8FAFC;
+  padding: 95px 0;
+  background: #F4F8FC;
 }
 
 .reviews-grid {
@@ -1095,7 +1112,7 @@ button, input, select, textarea {
 }
 
 .stars {
-  color: #FBBF24;
+  color: #F59E0B;
   font-size: 0.95rem;
   margin-bottom: 14px;
 }
@@ -1130,7 +1147,7 @@ button, input, select, textarea {
 .reviewer-details h5 {
   font-size: 0.95rem;
   font-weight: 800;
-  color: var(--color-dark);
+  color: var(--color-primary);
 }
 
 .reviewer-details span {
@@ -1142,7 +1159,7 @@ button, input, select, textarea {
    Contact & Location
    ========================================================================== */
 .contact-section {
-  padding: 90px 0;
+  padding: 95px 0;
   background: #FFFFFF;
 }
 
@@ -1162,7 +1179,7 @@ button, input, select, textarea {
 .contact-info-card h3 {
   font-size: 1.5rem;
   font-weight: 800;
-  color: var(--color-dark);
+  color: var(--color-primary);
   margin-bottom: 14px;
 }
 
@@ -1179,8 +1196,8 @@ button, input, select, textarea {
 }
 
 .contact-icon {
-  width: 46px;
-  height: 46px;
+  width: 48px;
+  height: 48px;
   border-radius: 12px;
   background: var(--color-primary-soft);
   color: var(--color-primary);
@@ -1204,7 +1221,7 @@ button, input, select, textarea {
 }
 
 .contact-text a:hover {
-  color: var(--color-primary);
+  color: var(--color-primary-light);
 }
 
 .map-container {
@@ -1223,13 +1240,14 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   Footer
+   Footer (Rich Deep Navy #001730)
    ========================================================================== */
 .footer {
-  background: #0B1F1C;
+  background: #001730;
   color: #94A3B8;
   padding: 70px 0 30px 0;
   font-size: 0.92rem;
+  border-top: 3px solid var(--color-primary-light);
 }
 
 .footer-grid {
@@ -1241,10 +1259,11 @@ button, input, select, textarea {
 
 .footer-brand h3 {
   font-family: var(--font-heading);
-  font-size: 1.4rem;
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 900;
   color: #FFFFFF;
   margin-bottom: 8px;
+  letter-spacing: 0.02em;
 }
 
 .footer-brand p {
@@ -1267,7 +1286,7 @@ button, input, select, textarea {
 }
 
 .footer-links a:hover {
-  color: var(--color-primary-light);
+  color: #60A5FA;
   padding-left: 4px;
 }
 
@@ -1302,7 +1321,7 @@ button, input, select, textarea {
   justify-content: center;
   color: #FFFFFF;
   font-size: 1.35rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 41, 87, 0.25);
   transition: var(--transition);
   position: relative;
 }
@@ -1340,7 +1359,7 @@ button, input, select, textarea {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(15, 23, 42, 0.6);
+  background: rgba(0, 28, 61, 0.65);
   backdrop-filter: blur(6px);
   z-index: 2000;
   display: none;
@@ -1385,7 +1404,7 @@ button, input, select, textarea {
 .modal-content h3 {
   font-size: 1.5rem;
   font-weight: 800;
-  color: var(--color-dark);
+  color: var(--color-primary);
   margin-bottom: 8px;
 }
 
@@ -1429,7 +1448,7 @@ button, input, select, textarea {
   .main-nav {
     display: none;
     position: absolute;
-    top: 80px;
+    top: 82px;
     left: 0;
     right: 0;
     background: #FFFFFF;
